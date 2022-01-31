@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    
+
+    <!-- IONIC ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--  -->
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul>        
+          <li>
+            <a href="#home" class="dot active" data-scroll="home">
+              <span></span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#about" class="dot" data-scroll="about">
+              <span></span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#project" class="dot" data-scroll="project">
+              <span></span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="#contact" class="dot" data-scroll="contact">
+              <span></span>
+            </a>
+          </li>        
+        </ul>        
+        </nav>
+        
+        <section class="sec" id="home">
+            <h1>I'm Rafael <span>Rizzo</span></h1>
+            <p>Web Developer</p>            
+            <p>Esse é o meu primeiro portfólio !</p>
+            <a href="curriculo/Rafael Rizzo Breschi Curriculo.pdf" target="_blank" class="btn-download">DOWNLOAD CV</a>            
+
+            <div class="images">
+                <img src="images/zen.png" alt="#" class="img-ze">
+                <span class="shape"></span>
+            </div>
+        </section>
+
+        <section class="sec" id="about">
+            <h2>SOBRE MIM</h2>
+                <div class="about-cont">
+                    <p>Olá =D Me chamo Rafael.
+                        <br> Tenho 19 anos e sou estudante de Analise e Desenvolvimento De Sistemas. <br>
+                        <br> Sou apaixonado por tecnologia, jogos e animes.<br>
+                        <br> Pretendo me tornar um grande DEV um dia e espero te conhecer também !<br>
+                        <br> Por enquanto essas são minhas principais linguagens que estou buscando aperfeiçoar:<br>
+                    </p>
+                </div>
+                <div class="col-1">
+                    <ul>
+                        <li>HTML</li>
+                    </ul>
+                    <ul>
+                        <li>CSS</li>
+                    </ul>
+                    <ul>
+                        <li>JS</li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="sec" id="project">
+            <div class="header-project">
+                <h1>PROJETOS</h1>
+            </div>
+            <img src="images/chibi-zenitsu.png" class="chibi_around" alt="#" >
+            <img src="images/chibi-zenitsu.png" class="chibi_around" alt="#" >
+
+            <div class="cont-project">
+                <div class="carousel">
+                    <div class="img-carousel">
+                        <a href="projects/tribute page b7/index.html" target="_blank"><img src="images/projeto1.png" alt="tribute_page_stephen_hawking"></a>
+                    </div>
+                    <div class="img-carousel">
+                        <a href="projects/projeto site b7/index.html" target="_blank"><img src="images/projeto2.png" alt="medicenter_projeto"></a>
+                    </div>
+                    <div class="img-carousel">
+                        <a href="projects/projeto tela inicial google/index.html" target="_blank"><img src="images/projetogoogle.png" alt="tela_inicial_google_projeto"></a>
+                    </div>
+                    <div class="img-carousel">
+                        <a href="projects/calculadora/index.html" target="_blank"><img src="images/projetocalculadora.png" alt="calculadora_projeto"></a>
+                    </div>
+                    <div class="img-carousel">
+                        <a href="projects/formulario b7/index.html" target="_blank"><img src="images/projetologin.png" alt="formulario_login"></a>
+                    </div><div class="img-carousel">
+                        <a href="projects/origamid flexbox/index.html" target="_blank"><img src="images/flexboxorigamid.png" alt="formulario_login"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="contact">       
+            
+            <div class="box-flex">
+                <img src="images/zefooter.png" alt="#">
+                <a href="https://www.instagram.com/rafael_breschi/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://github.com/rafaelRizzo" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://www.linkedin.com/in/rafael-rizzo-b02547216/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <footer>
+                <a href="index.html">Todos os direitos reservados</a>
+            </footer>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(window).on('scroll',function(){
+                    var link = $('.navbar a.dot');
+                    var top = $(window).scrollTop();
+            $('.sec').each(function(){
+                var id = $(this).attr('id');
+                var height = $(this).height();
+                var offset = $(this).offset().top - 150;
+            if(top >= offset && top < offset + height){
+                        link.removeClass('active');
+                             $('.navbar').find('[data-scroll="' + id + '"]').addClass('active');
+                    }
+                 });
+                });
+            });
+        </script>
+</body>
+</html>

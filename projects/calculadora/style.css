@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.fundo{
+    background-image: linear-gradient(45deg, rgba(84, 84, 84, 0.994), rgba(0, 0, 0, 0.898));
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#btn-preset-d{
+    background-image: linear-gradient(45deg, rgba(84, 84, 84, 0.994), rgba(0, 0, 0, 0.898));
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+#btn_preset_p{
+    background-image: linear-gradient(45deg, #DCB8CB, #CEEAF7);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-weight: bolder;
+}
+
+#btn_preset_dark{
+    background-image: linear-gradient(45deg, #828A95, #DCB8CB); 
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-weight: bolder;
+}
+
+#btn_preset_b{
+    background-image: linear-gradient(45deg, #828A95, #CEEAF7);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-weight: bolder;
+}
+
+
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0,.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.172);
+}
+
+.btn-preset{
+    font-size: large;
+    padding: 10px;
+    border: none;
+    margin: 10px 0;
+    transition: background .2s;
+}
+
+.btn-preset:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;    
+    background-color: rgb(31,31,31);
+    border: none;
+    color: white;
+    margin: 3px;
+    transition: background .2s;
+    border: 1px solid rgba(128, 128, 128, 0.063);
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+#resultado{
+    text-overflow: ellipsis;
+    margin: 5px;
+    height: 30px;
+    width: 212px;
+    background-color: rgba(255, 255, 255, 0.241);
+    font-size: 25px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.268);
+    text-align: right;
+    padding: 5px;
+}
+
+.light-pink-bg{
+    background-image: linear-gradient(45deg, #DCB8CB, #CEEAF7);
+}
+
+.dark-bg{
+    background-image: linear-gradient(45deg, #828A95, #DCB8CB);
+}
+
+.blue-bg{
+    background-image: linear-gradient(45deg, #828A95, #CEEAF7);
+}
+
+.light-pink-button{
+    background-color: #CCD7E4;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.light-pink-bg-body{
+    background-color: #828A95;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 450px){
+    #btn-preset-d, #btn_preset_p, #btn_preset_dark, #btn_preset_b {
+        padding: 4px;
+        font-weight: bolder;
+    }
+    .calculadora{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 320px){
+    #btn-preset-d, #btn_preset_p, #btn_preset_dark, #btn_preset_b {
+        padding: 2px;
+    }
+    .calculadora{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1024px){
+    #btn-preset-d, #btn_preset_p, #btn_preset_dark, #btn_preset_b {
+        padding: 5px;
+    }
+}

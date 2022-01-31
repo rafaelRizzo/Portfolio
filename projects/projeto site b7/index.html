@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCenter</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else{
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="assets/images/logo.png" alt="logo-medicenter"></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menuMobile" >
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">CONVÊNIO</a></li>
+                        <li><a href="#">DEPARTAMENTOS</a></li>
+                        <li><a href="#">AGENDAMENTO</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsive template perfect for all screen sizes </h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">Casos de emergencia</div>
+                    <div class="banner_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quis nam placeat rem! Deserunt.</div>
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">Horário dos médicos</div>
+                    <div class="banner_desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit quis nam placeat rem! Deserunt.</div>
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Horário de Funcionamento</div>
+                    <div class="banner_desc">
+                        <p>Segunda - Sexta<span> 8:00 - 17:00</span></p>
+                        <p>Sábado<span> 9:30 - 17:30</span></p>
+                        <p>Domingo<span> 9:30 - 15:00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget_title">
+                    <div class="widget_title_text first">Últimas Notícias</div>
+                    <div class="widget_title_bar"></div>
+                </div>
+                <div class="widget_body flex">
+                    <article>
+                        <a href="#">
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_coments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/dr.jpg" alt="#">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, rerum. Possimus aut hic ad necessitatibus ipsum, voluptates omnis beatae ea perferendis consequatur rem non eius, dolorem reprehenderit repellat ipsam quae.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptates odio enim possimus! Cupiditate sunt harum nemo dolore nostrum voluptatum, esse minima culpa asperiores eveniet inventore ab, deleniti possimus? Tenetur.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="#">
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_coments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/dr.jpg" alt="#">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, rerum. Possimus aut hic ad necessitatibus ipsum, voluptates omnis beatae ea perferendis consequatur rem non eius, dolorem reprehenderit repellat ipsam quae.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptates odio enim possimus! Cupiditate sunt harum nemo dolore nostrum voluptatum, esse minima culpa asperiores eveniet inventore ab, deleniti possimus? Tenetur.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="#">
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_coments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/dr.jpg" alt="#">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, rerum. Possimus aut hic ad necessitatibus ipsum, voluptates omnis beatae ea perferendis consequatur rem non eius, dolorem reprehenderit repellat ipsam quae.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptates odio enim possimus! Cupiditate sunt harum nemo dolore nostrum voluptatum, esse minima culpa asperiores eveniet inventore ab, deleniti possimus? Tenetur.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="#">
+                            <div class="news_data">
+                                <div class="news_posted_at">12 DEC 12</div>
+                                <div class="news_coments">2</div>
+                            </div>
+                            <div class="news_thumbnail">
+                                <img src="assets/images/dr.jpg" alt="#">
+                            </div>
+                            <div class="news_title">
+                                Lorem ipsum dolor sit amat velum
+                            </div>
+                            <div class="news_resume">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, rerum. Possimus aut hic ad necessitatibus ipsum, voluptates omnis beatae ea perferendis consequatur rem non eius, dolorem reprehenderit repellat ipsam quae.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptates odio enim possimus! Cupiditate sunt harum nemo dolore nostrum voluptatum, esse minima culpa asperiores eveniet inventore ab, deleniti possimus? Tenetur.
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">Departamentos</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body desc-items">
+                        <div class="widget_items"> 
+                            <p>Cardiologistas</p>                               
+                            <a href="#"><img src="assets/images/cardiologista.jpg" alt="#"></a>
+                        </div>
+                        <div class="widget_items">
+                            <p>Pediatras</p>
+                            <a href="#"><img src="assets/images/pediatra.jpg" alt="#"></a>
+                        </div>
+                        <div class="widget_items">                         
+                            <p>Psicologos</p>
+                            <a href="#"><img src="assets/images/psicologo.jpg" alt="#"></a>
+                        </div>
+                        <div class="widget_items">   
+                            <p>Ocolistas</p>
+                            <a href="#"><img src="assets/images/ocolista.jpg" alt="#"></a>
+                        </div>
+                        <div class="widget_items">   
+                            <p>Nutricionistas</p>
+                            <a href="#"><img src="assets/images/nutricionista.jpg" alt="#"></a>
+                        </div>
+                        <div class="widget_items">   
+                            <p>Veterinários</p>
+                            <a href="#"><img src="assets/images/veterinario.jpg" alt="#"></a>
+                        </div>                        
+                    </div>
+                    <div class="widget_title">
+                        <div class="widget_title_text">Marque uma consulta</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <div class="appointment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolor eos rem ratione rerum delectus magnam? Officia, iste? In, odit iure! Obcaecati veniam neque perferendis corrupti? Animi excepturi neque recusandae!
+                        </div>
+                        <div class="widget_contacts">
+                            <a href="">
+                                <img src="assets/images/icons/phone.png" alt="">por telefone: 0800 999 9999
+                            </a>
+                            <a href="">
+                                <img src="assets/images/icons/email.png" alt="">por e-maill: medicenter@mail.com
+                            </a>
+                            <a href="">
+                                <img src="assets/images/icons/files.png" alt="">
+                                ou preencha o formulário em nossa página de contato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container flex_column">
+            <div class="footer_menu">
+                <div class="fm_1">
+                    <a href="#">Plano de saúde
+                        <img src="assets/images/icons/rightarrow.svg"/></a>
+                    <p>Aqui temos atendimento individual</p>
+                </div>
+                <div class="fm_2">
+                    <a href="#">Registros médicos
+                        <img src="assets/images/icons/rightarrow.svg"/></a>
+                    <p>Aqui temos atendimento individual</p>
+                </div>
+                <div class="fm_3">
+                    <a href="#">Pagamento de contas online
+                            <img src="assets/images/icons/rightarrow.svg"/></a>
+                        <p>Aqui temos atendimento individual</p>
+                </div>
+            </div>
+
+            <div class="footer_area">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Medicenter Clinica</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body footer_text">
+                            <p>
+                                Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisimalesuada individual.
+                            </p>
+                        </div>
+                        <div class="widget_body footer_adress">
+                                <address>
+                                    <p>Medicenter Clinica</p>
+                                    <p>33 Farlane Street</p>
+                                    <p>Kellor East</p>
+                                    <p>VIC 3033, Brazil</p>
+                                </address>
+                            <div class="widget_body2 footer_phone">
+                                <p>+123 655 655</p>
+                                <p>+123 755 755</p>
+                                <a href="#">medicenter@mail.com</a>
+                            </div>
+
+                            <div class="socials">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Posts</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body_latest_post">
+                            <p>
+                                <img src="assets/images/icons/rightarrow.svg" alt="#"> Mauris adipiscing mauris fringilla turpis interdum.
+                            </p>
+                            <p>6 days ago</p>
+                        </div>
+                        <div class="widget_body_latest_post">
+                            <p>
+                                <img src="assets/images/icons/rightarrow.svg" alt="#">Lorem ipsum, dolor sit amet.
+                            </p>
+                            <p>6 days ago</p>
+                        </div>
+                        <div class="widget_body_latest_post">
+                            <p>
+                                <img src="assets/images/icons/rightarrow.svg" alt="#">Mauris adipiscing mauris fringilla turpis interdum sed pulvinar.
+                            </p>
+                            <p>6 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">Latest Tweets</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <div class="widget_body_latest_tweets">
+                                <p>
+                                    <img src="assets/images/icons/rightarrow.svg" alt="#">
+                                    We've released new version (v1.2) of our #CleanMate #Cleaning Company #Maid #Gardening #Wordpress Theme. Please che... <a href="#">t.co/tYVkhmpb30</a>
+                                </p>
+                                <p>4 days ago</p>
+                            </div>
+                            <div class="widget_body_latest_tweets">
+                                <p>
+                                    <img src="assets/images/icons/rightarrow.svg" alt="#">
+                                    We've released new version (v5.1) of our #Timetable #Responsive #Schedule #WP Plugin. Please check at #CodeCanyon <a href="#">t.co/wUTmgd2atO</a>
+                                </p>
+                                <p>6 days ago</p>
+                            </div>
+                            <div class="widget_body_latest_tweets">
+                                <p>
+                                    <img src="assets/images/icons/rightarrow.svg" alt="#">
+                                    We've released new version (v5.0) of our #Timetable #Responsive #Schedule #WP Plugin with #booking and #pdf #export... <a href="#">t.co/FwvKmJcDoC</a>
+                                </p>
+                                <p>7 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer_copy">
+                Copyright - Todos os direitos reservados
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
