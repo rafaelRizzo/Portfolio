@@ -5,7 +5,14 @@
     padding: 0;
     user-select: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow-x: none;
+}
+
+html{    
+    overflow-x: hidden;
+}
+  
+body::-webkit-scrollbar {
+    width: 0px
 }
 
 body{
