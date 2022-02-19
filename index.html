@@ -15,9 +15,14 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!--  -->
+
 </head>
 <body>
-    
+    <div class="dark">
+        <ion-icon id="moon" onclick="onDark()" name="moon-outline" alt="ligardark"></ion-icon>
+        <ion-icon id="sun" onclick="offDark()" name="sunny-outline" alt="voltardark"></ion-icon>
+    </div>
+
     <nav class="navbar">
         <ul>        
           <li>
@@ -85,8 +90,6 @@
             <div class="header-project">
                 <h1>PROJETOS</h1>
             </div>
-            <img src="images/chibi-zenitsu.png" class="chibi_around" alt="#" >
-            <img src="images/chibi-zenitsu.png" class="chibi_around" alt="#" >
 
             <div class="cont-project">
                 <div class="carousel">
@@ -94,7 +97,7 @@
                         <a href="projects/tribute page b7/index.html" target="_blank"><img src="images/projeto1.png" alt="tribute_page_stephen_hawking"></a>
                     </div>
                     <div class="img-carousel">
-                        <a href="projects/projeto site b7/index.html" target="_blank"><img src="images/projeto2.png" alt="medicenter_projeto"></a>
+                        <a href="projects/projeto site b7/index.html" target="_blank"><img src="images/projeto2.png" alt="projeto_medicenter_site"></a>
                     </div>
                     <div class="img-carousel">
                         <a href="projects/projeto tela inicial google/index.html" target="_blank"><img src="images/projetogoogle.png" alt="tela_inicial_google_projeto"></a>
@@ -106,6 +109,9 @@
                         <a href="projects/formulario b7/index.html" target="_blank"><img src="images/projetologin.png" alt="formulario_login"></a>
                     </div><div class="img-carousel">
                         <a href="projects/origamid flexbox/index.html" target="_blank"><img src="images/flexboxorigamid.png" alt="formulario_login"></a>
+                    </div>
+                    <div class="img-carousel">
+                        <a href="projects/projeto landing page nike/index.html" target="_blank"><img src="images/landingpagenike.png" alt="projeto_landing_page_nike"></a>
                     </div>
                 </div>
             </div>
@@ -143,5 +149,7 @@
                 });
             });
         </script>
+
+        <script src="darkMode.js"></script>
 </body>
 </html>
