@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: none;
+}
+
+body{
+    background-color: #141414;
+    background-image: url(assets/bg-particles.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .logo img{
+    width: 150px;
+}
+
+nav .logo{
+    filter: invert(1);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 100px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #C7C7C7;
+    font-size: 32px;
+    transition: color .2s;
+}
+
+nav ul li a:hover{
+    color: rgba(163, 39, 41, 0.74);
+}
+
+form label{
+    display: flex;
+}
+
+input{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+ion-icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color .2s;
+}
+
+ion-icon:hover{
+    color: #E54456;
+}
+
+.menu-hamburguer, .search-icon-mobile{
+    display: none;
+}
+
+/* //NAV// */
+
+main.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
+    color: #fff;
+}
+
+main .container_content{
+    margin-top: -100px;
+}
+
+main .container_content h1{
+    text-align: center;
+    font-size: 100px;
+    line-height: 80px;
+    letter-spacing: 5px;
+    font-family: 'Caveat', cursive;
+    text-shadow: 1px 1px 5px #000;
+}
+
+main .container_content p{    
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+    color: #E54456;
+    text-shadow: 1px 1px 5px #000;
+}
+
+main .container_content button{    
+    display: flex;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: #E54456;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.712);
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background .2s, color .1s;
+}
+
+main .container_content button:hover{    
+    background-color: #fff;
+    color: #E54456;
+}
+
+main .container_photo{
+    margin-right: -100px;
+}
+
+main .container_photo img{
+    width: 700px;
+    height: 700px;
+    transition: transform .5s ease-out;
+}
+
+main .container_photo img:hover{
+    transform: scale(105%);
+}
+
+
+/* MEDIAS QUERY */
+@media (max-width: 1440px){
+
+    main .container_photo img{
+        width: 600px;
+        height: 600px;
+    }
+
+    main .container_content h1{
+        text-align: center;
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: 5px;
+        font-family: 'Caveat', cursive;
+        text-shadow: 1px 1px 5px #000;
+    }
+}
+
+@media (max-width: 1200px){
+    main .container_photo img{
+        width: 500px;
+        height: 500px;
+    }
+
+    main .container_content h1{
+        text-align: center;
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: 5px;
+        font-family: 'Caveat', cursive;
+        text-shadow: 1px 1px 5px #000;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding-left: 60px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #C7C7C7;
+        font-size: 20px;
+        transition: color .2s;
+    }
+}
+
+@media (max-width: 1000px){    
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #C7C7C7;
+        font-size: 20px;
+        transition: color .2s;
+    }
+
+    main.container{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    
+    main .container_photo{
+        margin-right: 0px
+    }
+
+    main .container_photo img{
+        width: 500px;
+        height: 500px;
+    }
+
+    main .container_content{
+        margin-top: 50px;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+
+    main .container_content h1{
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    main .container_content p{
+        color: #fff;
+    }
+}
+
+@media (max-width: 720px){
+
+    main .container_photo img{
+        width: 400px;
+        height: 400px;
+    }
+
+    main .container_content h1{
+        text-align: center;
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: 5px;
+        font-family: 'Caveat', cursive;
+        text-shadow: 1px 1px 5px #000;
+    }
+    
+    input{
+        outline: none;
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+    
+    .input_box{
+        display: none;
+    }
+    
+    .menu-hamburguer, .search-icon-mobile, .bag-icon{
+        display: flex;
+        font-size: 30px;
+    }
+
+    .menu-hamburguer{
+        font-size: 40px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 360px){
+    .logo{
+        width: 100px;
+    }
+
+    main .container_photo img{
+        width: 300px;
+        height: 300px;
+    }
+
+    main .container_content h1{
+        text-align: center;
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: 5px;
+        font-family: 'Caveat', cursive;
+        text-shadow: 1px 1px 5px #000;
+    }
+    
+    input{
+        outline: none;
+        background-color: transparent;
+        border: 0;
+        color: #fff;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav ul li a{
+        display: none;
+    }
+    
+    .input_box{
+        display: none;
+    }
+    
+    .menu-hamburguer, .search-icon-mobile, .bag-icon{
+        display: flex;
+        font-size: 30px;
+    }
+
+    .menu-hamburguer{
+        font-size: 40px;
+        margin-top: 5px;
+    }
+}
+/* MEDIAS QUERY */
