@@ -7,14 +7,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-html{    
-    overflow-x: hidden;
-}
-  
-body::-webkit-scrollbar {
-    width: 0px
-}
-
 body{
     background-color: #141414;
     background-image: url(assets/bg-particles.png);
@@ -23,6 +15,7 @@ body{
     background-size: cover;
     width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /* NAV */
