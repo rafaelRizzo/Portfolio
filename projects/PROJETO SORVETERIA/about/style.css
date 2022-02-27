@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 70px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 100px;
+}
+main p, main h2{
+    font-size: 30px;
+    margin: 30px;
+}
+main p{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+}
+
+section{
+    background-image: url(assets/bgred.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 200px;
+}
+section h2{
+    text-align: center;
+    width: 100vw;
+    margin: 100px 30px;
+    font-size: 50px;
+    color: #fff ;
+}
+section div.card{
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 500px;
+    background-color: #fff;
+    margin: 40px 20px;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255, .15);
+    border: 1px solid rgb(255, 255, 255, .1);
+    transition: transform .3s;
+}
+section div.card:hover{
+    transform: scale(110%);
+}
+section div.card .card-img img{
+    width: 100%;
+    height: 350px;
+    border-bottom: 1px solid rgb(0, 0, 0, .2);
+}
+section div.card .card-name{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+}
+section div.card .card-info{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+}
+section a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer{
+    display: flex;
+    background-color: #111;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+    margin: 10px;
+}
+
+
+

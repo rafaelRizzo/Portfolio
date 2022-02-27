@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+img{
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    margin: 50px auto;
+    padding: 20px 100px;
+    background-color: aquamarine;
+    outline: 0;
+    border: 0;
+    box-shadow: 1px 1px 5px 5px aquamarine;
+    color: #111;
+    font-size: 26px;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    transition: transform .3s;
+}
+
+a:hover{
+    transform: translateX(-10px)
+}

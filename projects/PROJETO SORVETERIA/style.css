@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    transition: transform .3s ease;
+}
+
+/* SCROLL BAR */
+/*! Firefox */    
+html{
+    background-color: #EFADBB;
+    overflow-x: hidden;
+    scrollbar-color: #eee #EFADBB;
+}
+
+/*! Other Browser */
+html {
+    --scrollbarBG: #EFADBB;
+    --thumbBG: #eee;
+}
+body::-webkit-scrollbar {
+    width: 11px;
+}
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+/* \SCROLL BAR/ */
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: url(assets/bg1-toplow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+nav .logo img{  
+    width: 60px;
+    padding-left: 50px;
+}
+nav .logo p{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 50px;
+    user-select: none;
+}
+
+.hamburguer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.hamburguer 
+.line-1,
+.line-2,
+.line-3{
+    margin-top: 8px;
+    width: 30px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.change1{
+    transform: translateY(10px) rotateZ(-45deg);
+}
+.change2{
+    transform: rotate(45deg);
+}
+.change3{
+    opacity: 0;
+}
+
+.navbar{
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 0px;
+    transition: .3s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+.toggleMenu{
+    display: block;
+    visibility: visible;
+    height: 275px;
+}
+nav .navbar li{
+    padding: 20px;
+    transition: transform .3s, background-color .3s;
+}
+nav .navbar a{
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+}
+nav .navbar li:hover{
+    background-color: #EFADBB;
+    transform: translateY(-5px);
+}
+
+nav .navbar p{
+    display: none;
+    padding: 20px;
+    color: #fc4120;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    line-height: 120px;
+    letter-spacing: 5px;
+}
+main p{
+    font-size: 80px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0px 1px 4px #000;
+}
+
+
+@media (max-width: 1440px) {
+    main p{
+        font-size: 60px;
+    }    
+}
+
+@media (max-width: 1200px) {
+    main p{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        flex-direction: row;
+    }
+    main p{
+        font-size: 50px;
+        line-height: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    nav{
+        justify-content: space-between;
+    }
+    nav .logo img{
+        padding: 0;
+    }
+    main{
+        flex-direction: column;
+    }
+    main p{
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 600px){    
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        background-color: #EFADBB;
+        top: 0;
+        width: 100vw;
+        height: 0;
+        right: 0;
+        line-height: 100px;
+        transition: .3s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .toggleMenu{
+        display: block;
+        visibility: visible;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    nav .navbar li:hover{
+        background-color: #ee8fa3;
+        transform: translateY(-5px);
+    }
+    nav .navbar p{
+        display: inline;
+    }
+}
+
+@media(max-width: 320px){
+    nav .logo p{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 45px;
+    user-select: none;
+}
+    main p{
+        font-size: 45px;
+        line-height: 55px;
+    }
+}
