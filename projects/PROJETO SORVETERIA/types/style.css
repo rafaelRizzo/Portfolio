@@ -123,8 +123,7 @@ div.bg_top p{
 .container .card .card-item .card-buy{
     display: flex;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;  
-    font-size: 26px;
+    font-size: 40px;
     background-color: #7fccb2;
     padding: 10px;
     border: 2px solid transparent;

@@ -186,11 +186,11 @@ main p{
 }
 
 @media (max-width: 768px){
-    nav{
-        justify-content: space-between;
-    }
     nav .logo img{
         padding: 0;
+    }
+    nav .logo p{
+        padding-left: 80px;
     }
     main{
         flex-direction: column;
@@ -232,13 +232,16 @@ main p{
     }
 }
 
-@media(max-width: 320px){
+@media(max-width: 420px){
     nav .logo p{
     color: #fff;
     font-size: 20px;
-    padding-left: 45px;
     user-select: none;
-}
+    padding-left: 0;
+    }
+    .hamburguer{
+        margin-right: 20px;
+    }
     main p{
         font-size: 45px;
         line-height: 55px;

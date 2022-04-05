@@ -85,3 +85,10 @@ body{
 .showForgtext{
     display: block;
 }
+
+@media (max-width: 425px) {
+    .container form{
+        width: 100%;
+        height: 100%;
+    }
+}
