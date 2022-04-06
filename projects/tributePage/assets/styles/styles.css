@@ -1,0 +1,320 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu Mono;
+    scroll-behavior: smooth;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #EFF4FD;
+}
+
+div.container{
+    display: flex;
+    width: 1024px;
+    margin: auto;
+}
+
+.bg_tribute{
+    display: flex;
+    width: 100%;
+    height: 650px;
+    background-color: #000;
+}
+
+.tribute_name{
+    display: flex;
+    flex-direction: column;
+}
+
+.tribute_name h1{
+    font-family: Ubuntu Mono;
+    color: #fff;
+    font-size: 90px;
+    line-height: 70px;
+}
+
+.tribute_name a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #fff;
+    font-weight: 500;
+    font-family: Ubuntu Mono;
+    font-size: 14px;
+    transition: background .2s, color .1s ease-in;
+}
+
+.tribute_name a:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+img{
+    display: flex;
+    height: 550px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    filter: grayscale(1);
+}
+
+blockquote{
+    color: #fff;
+    font-style: italic;
+    position: absolute;
+    z-index: 999;
+    margin-top: 150px;
+}
+
+cite{
+    font-style: normal;
+    padding-left: 20px;
+}
+
+.tribute_timeline{
+    margin: auto;
+}
+
+.tribute_timeline h1{
+    text-shadow: 0px 1px 0px rgba(7, 7, 7, 0.575);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Ubuntu;
+    width: 100%;
+    text-align: center;
+}
+
+.tribute_lines{
+    width: 1024px;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 60px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 3px #ccc;
+}
+
+.tribute_timeline p{
+    text-shadow: 0px 1px 0px rgba(7, 7, 7, 0.575);
+    margin: auto;
+    line-height: 25px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+.tribute_more{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tribute_more a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.tribute_more a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    padding: 30px;
+    font-family: Ubuntu;
+}
+
+.btn_to_top{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    transition: box-shadow .2s;
+}
+
+.btn_to_top:hover{
+    box-shadow: 2px 2px 5px #000;
+    cursor: pointer;
+}
+
+
+
+@media(max-width: 1750px){
+    img{
+        width: 800px;
+    }
+}
+
+@media(max-width: 1400px){
+    img{
+        width: 700px;
+        right: 0;
+    }
+}
+
+@media(max-width: 1024px){
+    .tribute_name h1{
+        padding-left: 40px;
+    }
+
+    img{
+        width: 650px;
+        right: 0;
+    }
+
+    blockquote{
+        padding-left: 40px;
+    }
+
+    div.tribute_lines{
+        width: 800px;
+    }
+}
+
+@media(max-width: 980px){
+    .tribute_name h1{
+        padding: 20px;
+    }
+
+    img{
+        width: 650px;
+        right: 0;
+    }
+
+    blockquote{
+        padding: 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .bg_tribute{
+        height: 800px;
+    }
+
+    .tribute_name h1{
+        padding: 0;
+    }
+
+    blockquote{
+        padding: 20px;
+    }    
+
+    div.tribute_lines{
+        width: 700px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 980px){
+    img{
+        display: none;
+    }
+
+    div.container{
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    blockquote{
+        position: static !important; 
+    }
+
+    cite{
+        line-height: 40px;
+        padding: 20px;
+    }
+}
+
+@media(max-width: 700px){
+    .tribute_name h1{
+        font-size: 60px;
+    }
+    
+    img{
+        display: none;
+    }
+
+    div.container{
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    blockquote{
+        position: static !important; 
+        font-size: 12px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    cite{
+        line-height: 30px;
+        padding: 20px;
+    }    
+
+    div.tribute_lines{
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px){
+
+    div.tribute_lines{
+        width: 300px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px){    
+
+    div.tribute_lines{
+        width: 270px;
+    }
+}
+
+@media (max-width: 280px){    
+
+    div.tribute_lines{
+        width: 250px;
+    }
+
+    .tribute_more p{
+        font-size: 14px;
+    }
+}

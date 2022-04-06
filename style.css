@@ -255,8 +255,7 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
 }
 .infoAbout h1{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   width: 100vw;
   background-color: #cc5803;
   color: #eff4fd;
@@ -416,8 +415,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .infoProject h1{
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 20px;
   background-color: #cc5803;
   color: #eff4fd;
@@ -502,8 +500,6 @@ body::-webkit-scrollbar-thumb {
   height: 100vh;
 }
 #contact h1{
-  display: flex;
-  flex-direction: column;
   text-align: center;
   width: 100vw;
   padding: 20px;
