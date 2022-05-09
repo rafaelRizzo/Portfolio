@@ -37,5 +37,32 @@ contact.addEventListener("click", ()=>{
 });
 
 
+home.classList.add("active");
+window.addEventListener("scroll", function() {
+    var posicaoY = window.scrollY;    
+    if(posicaoY <= 20 && posicaoY < 500 ){
+        home.classList.add("active");
 
+        about.classList.remove("active");
+        project.classList.remove("active");
+        contact.classList.remove("active");   
+    } else if (posicaoY >= 850 && posicaoY < 2000){
+        about.classList.add("active");
 
+        home.classList.remove("active");
+        project.classList.remove("active");
+        contact.classList.remove("active");   
+    } else if (posicaoY >= 2250 && posicaoY < 3500){
+        project.classList.add("active");
+
+        about.classList.remove("active");
+        home.classList.remove("active");
+        contact.classList.remove("active");   
+    } else if(posicaoY >= 3501){
+        contact.classList.add("active");   
+
+        home.classList.remove("active");
+        about.classList.remove("active");
+        project.classList.remove("active");
+    }
+  });

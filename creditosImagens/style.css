@@ -35,6 +35,9 @@ body{
     text-decoration: none;
 }
 @media (max-width: 1000px){
+    .boxContent{
+        width: 100%;
+    }
     body{
         flex-direction: column;
     }

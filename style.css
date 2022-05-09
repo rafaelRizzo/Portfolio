@@ -15,7 +15,7 @@ html{
 body{
   overflow-x: hidden;
   background: #eff4fd;
-  transition: background-color .5s;
+  transition: background-color .5s ease;
   font-family: 'Poppins', sans-serif;  
 }
   
@@ -71,7 +71,8 @@ body::-webkit-scrollbar-thumb {
 }  
 .navbar ul{
   list-style: none;
-  padding:0; margin: 0;
+  padding:0;
+  margin: 0;
 }  
 .navbar ul li{
   position: relative;
@@ -92,7 +93,7 @@ body::-webkit-scrollbar-thumb {
 }  
 .navbar ul li .dot span::before{
   content: '';
-  position: absolute;
+  position: fixed;
   top:50%; right:0;
   transform: translate(7px, -50%);
   border-top: 7px solid transparent;
@@ -496,7 +497,6 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100vw;
   height: 100vh;
 }
 #contact h1{
@@ -509,10 +509,8 @@ body::-webkit-scrollbar-thumb {
 }
 .infoContact{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -520,11 +518,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255,255,255, .4);
+  background-color: rgba(255,255,255, .2);
   box-shadow: 0 0 70px rgba(0,0,0,.2);
   border: 1px solid rgba(204, 88, 3, .1);
   width: 600px;
-  height: 400px;
+  height: 50vh;
   z-index: 2;
   margin-top: 200px;
   border-radius: 5px;
@@ -549,7 +547,6 @@ ion-icon:hover{
   .infoContact .socialMidias{
     flex-direction: column;
     width: 70%;
-    height: 350px;
   }
   ion-icon{
     margin-top: 40px;
@@ -560,6 +557,7 @@ ion-icon:hover{
   .infoContact .socialMidias{
     width: 60%;
     margin-top: 70px;
+    height: 600px;
   }
 }
 /* MEDIA QUERY SECTION CONTACT / */
@@ -567,9 +565,10 @@ ion-icon:hover{
 
 /* MEDIA QUERY FOOTER  */
 footer{
-  position: relative;
+  position: static;
   left: 0;
   right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
