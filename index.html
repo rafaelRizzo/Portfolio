@@ -1,239 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu portfólio</title>
 
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu portfólio</title>
 
-    <link
-      rel="shortcut icon"
-      href="favicon/favicon-32x32.png"
-      type="image/x-icon"
-    />
+  <link rel="stylesheet" href="style.css" />
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </head>
-  <body>
-    <!-- DARK MODE -->
-    <img class="moon" src="svg/moon.svg" alt="ligar darkMode" />
-    <img class="sun" src="svg/sunny.svg" alt="ligar darkMode" />
-    <!-- DARK MODE /-->
+  <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon" />
 
-    <!-- NAVBAR HORIZONTAL -->
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="#home" class="dot" data-scroll="home">
-            <span></span>
-          </a>
-        </li>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
 
-        <li>
-          <a href="#about" class="dot" data-scroll="about">
-            <span></span>
-          </a>
-        </li>
+<body>
+  <!-- DARK MODE -->
+  <img class="moon" src="svg/moon.svg" alt="ligar darkMode" />
+  <img class="sun" src="svg/sunny.svg" alt="ligar darkMode" />
+  <!-- DARK MODE /-->
 
-        <li>
-          <a href="#project" class="dot" data-scroll="project">
-            <span></span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#contact" class="dot" data-scroll="contact">
-            <span></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- NAVBAR HORIZONTAL/ -->
-
-    <!-- SECTION TOP -->
-    <section class="sec" id="home">
-      <div class="infoTop">
-        <h1>Sou Rafael <span>Rizzo</span></h1>
-        <p>Dev. Front-end.</p>
-        <p>Seja bem-vindo ao meu portfólio!</p>
-        <a
-          href="curriculo/Curriculo Rafael Rizzo .pdf"
-          target="_blank"
-          class="btn-download"
-        >
-          DOWNLOAD CV
+  <!-- NAVBAR HORIZONTAL -->
+  <nav class="navbar">
+    <ul>
+      <li>
+        <a href="#home" class="dot" data-scroll="home">
+          <span></span>
         </a>
-        <div class="boxImageTop">
-          <span class="shape" data-speed="-5"></span>
-          <img
-            class="layer"
-            src="images/zencompress.png"
-            data-speed="5"
-            alt="zenitsu"
-          />
-        </div>
+      </li>
+
+      <li>
+        <a href="#about" class="dot" data-scroll="about">
+          <span></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#project" class="dot" data-scroll="project">
+          <span></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact" class="dot" data-scroll="contact">
+          <span></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- NAVBAR HORIZONTAL/ -->
+
+  <!-- SECTION TOP -->
+  <section class="sec" id="home">
+    <div class="infoTop">
+      <h1>Sou Rafael <span>Rizzo</span></h1>
+      <p>Dev. Front-end.</p>
+      <p>Seja bem-vindo ao meu portfólio!</p>
+      <a href="curriculo/Curriculo Rafael Rizzo .pdf" target="_blank" class="btn-download">
+        DOWNLOAD CV
+      </a>
+      <div class="boxImageTop">
+        <span class="shape" data-speed="-5"></span>
+        <img class="layer" src="images/zencompress.png" data-speed="5" alt="zenitsu" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="sec" id="about">
-      <div class="infoAbout">
-        <h1>Sobre mim</h1>
-        <div class="infoBox">
-          <div class="infoLeft">
-            <p>Olá ! me chamo Rafael, é um prazer te conhecer.</p>
-            <p>
-              Tenho 20 anos e sou estudante de
-              <span>Análise e Desenvolvimento de Sistemas</span> pela
-              Unicesumar. E com o decorrer do ano me encontrei no Front-end,
-              onde consigo criar diversas coisas dos mais variados tipos.
-            </p>
-            <p>
-              Atualmente não exerço na área mas estou me esforçando conseguir.
-            </p>
-            <p>
-              E essas são as tecnologias que estou focado. <span> >>> </span>
-            </p>
-          </div>
-          <div class="infoRight">
-            <div class="cardExp" id="html">
-              <img src="svg/html.svg" alt="html" />
-              <p class="expFont">HTML</p>
-            </div>
-            <div class="cardExp" id="css">
-              <img src="svg/css.svg" alt="css" />
-              <p class="expFont">CSS</p>
-            </div>
-            <div class="cardExp" id="js">
-              <img class="changedark" src="svg/js.svg" alt="js" />
-              <p class="expFont">JAVASCRIPT</p>
-            </div>
-            <div class="cardExp" id="react">
-              <img class="changedark" src="svg/react.svg" alt="reactjs" />
-              <p class="expFont">REACT JS</p>
-            </div>
-          </div>
+  <section class="sec" id="about">
+    <div class="infoAbout">
+      <h1>Sobre mim</h1>
+      <div class="infoBox">
+        <div class="infoLeft">
+          <p>Olá ! me chamo Rafael, é um prazer te conhecer.</p>
+          <p>
+            Tenho 20 anos e sou estudante de
+            <span>Análise e Desenvolvimento de Sistemas</span> pela
+            Unicesumar. E com o decorrer do ano me encontrei no Front-end,
+            onde consigo criar diversas coisas dos mais variados tipos.
+          </p>
+          <p>
+            Atualmente não exerço na área mas estou me esforçando conseguir.
+          </p>
+          <p>
+            E essas são as tecnologias que estou focado. <span> >>> </span>
+          </p>
         </div>
-      </div>
-    </section>
-
-    <section class="sec" id="project">
-      <div class="infoProject">
-        <h1>Projetos</h1>
-        <div class="containerProject">
-          <div class="projectImages">
-            <a href="projects/tributePage/index.html" target="_blank">
-              <img src="images/projeto1.png" alt="projeto1" />
-            </a>
+        <div class="infoRight">
+          <div class="cardExp" id="html">
+            <img src="svg/html.svg" alt="html" />
+            <p class="expFont">HTML</p>
           </div>
-
-          <div class="projectImages">
-            <a href="projects/projeto site b7/index.html" target="_blank">
-              <img src="images/projeto2.png" alt="projeto2" />
-            </a>
+          <div class="cardExp" id="css">
+            <img src="svg/css.svg" alt="css" />
+            <p class="expFont">CSS</p>
           </div>
-
-          <div class="projectImages">
-            <a
-              href="projects/projeto tela inicial google/index.html"
-              target="_blank"
-            >
-              <img src="images/projetogoogle.png" alt="projeto3" />
-            </a>
+          <div class="cardExp" id="js">
+            <img class="changedark" src="svg/js.svg" alt="js" />
+            <p class="expFont">JAVASCRIPT</p>
           </div>
-          <div class="projectImages">
-            <a href="projects/calculadora/index.html" target="_blank">
-              <img src="images/projetocalculadora.png" alt="projeto4" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a href="projects/formulario b7/index.html" target="_blank">
-              <img src="images/projetologin.png" alt="projeto5" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a href="projects/projeto clima b7/index.html" target="_blank">
-              <img src="images/projetoclima.png" alt="projeto6" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a
-              href="projects/projeto landing page nike/index.html"
-              target="_blank"
-            >
-              <img src="images/landingpagenike.png" alt="projeto7" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a href="projects/PROJETO SORVETERIA/index.html" target="_blank">
-              <img src="images/projetoSorveteria.png" alt="projeto8" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a href="projects/Projeto Pizza/index.html" target="_blank">
-              <img src="images/pizzaria-project.png" alt="projeto9" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a
-              href="https://rafaelrizzo-react-projeto.netlify.app/"
-              target="_blank"
-            >
-              <img src="images/projetoNetflix.png" alt="projeto10" />
-            </a>
-          </div>
-          <div class="projectImages">
-            <a href="https://landingpage-chihiro.netlify.app/" target="_blank">
-              <img src="images/projetoChihiro.png" alt="projeto11" />
-            </a>
+          <div class="cardExp" id="react">
+            <img class="changedark" src="svg/react.svg" alt="reactjs" />
+            <p class="expFont">REACT JS</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="sec" id="contact">
-      <div class="infoContact">
-        <h1>Contato</h1>
-        <div class="bgFixedContact"></div>
-        <div class="socialMidias">
-          <div class="socialIcons">
-            <a href="https://github.com/rafaelRizzo" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </div>
-          <div class="socialIcons">
-            <a
-              href="https://www.linkedin.com/in/rafael-rizzo-b02547216/"
-              target="_blank"
-            >
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </div>
-          <div class="socialIcons">
-            <a href="https://www.instagram.com/rafael_breschi/" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </div>
+  <section class="sec" id="project">
+    <div class="infoProject">
+      <h1>Projetos</h1>
+      <div class="containerProject">
+        <div class="projectImages">
+          <a href="projects/tributePage/index.html" target="_blank">
+            <img src="images/projeto1.png" alt="projeto1" />
+          </a>
+        </div>
+
+        <div class="projectImages">
+          <a href="projects/projeto site b7/index.html" target="_blank">
+            <img src="images/projeto2.png" alt="projeto2" />
+          </a>
+        </div>
+
+        <div class="projectImages">
+          <a href="projects/projeto tela inicial google/index.html" target="_blank">
+            <img src="images/projetogoogle.png" alt="projeto3" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/calculadora/index.html" target="_blank">
+            <img src="images/projetocalculadora.png" alt="projeto4" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/formulario b7/index.html" target="_blank">
+            <img src="images/projetologin.png" alt="projeto5" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/projeto clima b7/index.html" target="_blank">
+            <img src="images/projetoclima.png" alt="projeto6" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/projeto landing page nike/index.html" target="_blank">
+            <img src="images/landingpagenike.png" alt="projeto7" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/PROJETO SORVETERIA/index.html" target="_blank">
+            <img src="images/projetoSorveteria.png" alt="projeto8" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/Projeto Pizza/index.html" target="_blank">
+            <img src="images/pizzaria-project.png" alt="projeto9" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="https://rafaelrizzo-react-projeto.netlify.app/" target="_blank">
+            <img src="images/projetoNetflix.png" alt="projeto10" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="https://landingpage-chihiro.netlify.app/" target="_blank">
+            <img src="images/projetoChihiro.png" alt="projeto11" />
+          </a>
+        </div>
+        <div class="projectImages">
+          <a href="projects/projetoCaravan/index.html" target="_blank">
+            <img src="images/projetoCaravan.png" alt="projeto12" />
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <a href="creditosImagens/creditos.html" target="_blank">
-        &copy Todos os direitos reservados</a
-      >
-    </footer>
+  <section class="sec" id="contact">
+    <div class="infoContact">
+      <h1>Contato</h1>
+      <div class="bgFixedContact"></div>
+      <div class="socialMidias">
+        <div class="socialIcons">
+          <a href="https://github.com/rafaelRizzo" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </div>
+        <div class="socialIcons">
+          <a href="https://www.linkedin.com/in/rafael-rizzo-b02547216/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/rafael_breschi/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/menutargets.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/darkMode.js"></script>
-  </body>
+  <footer>
+    <a href="creditosImagens/creditos.html" target="_blank">
+      &copy Todos os direitos reservados</a>
+  </footer>
+
+  <script src="js/menutargets.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/darkMode.js"></script>
+</body>
+
 </html>
